@@ -687,6 +687,12 @@ footer {
 
 }
 
+.contact-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .contact-content a {
     width: 100%;
 }
@@ -1139,6 +1145,26 @@ footer {
 
     .about {
         width: 60%;
+    }
+
+    .about-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 40px;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .photo-div img {
+        width: 80%;
+
+    }
+
+    .photo-div {
+        width: 35%;
     }
 
     .about h3 {
