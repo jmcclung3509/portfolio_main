@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--highlight-color);
 }
 
@@ -52,7 +52,7 @@ h6 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: .875rem;
     color: var(--dark-text-color);
     margin: 0;
 }
@@ -286,13 +286,15 @@ main {
     color: var(--highlight-color);
     background-color: transparent;
     border: 2px solid var(--highlight-color);
-    padding: 10px 10px;
+    padding: 13px 20px;
     margin-top: 40px;
     font-size: .875rem;
     opacity: 0;
     animation: text_reveal_btn 2s ease forwards;
     animation-delay: 3s;
     position: relative;
+    border-radius: 6px;
+
 }
 
 .btn-contact:hover {
@@ -1073,7 +1075,7 @@ footer {
 
     .title {
         margin-left: 100px;
-        margin-top: 25%;
+        /* margin-top: 25%; */
     }
 
     .title h5 {
@@ -1089,7 +1091,7 @@ footer {
     }
 
     .btn-contact {
-        padding: 13px 30px;
+
         font-size: 1.2rem;
         animation: text_reveal_btn 1.5s ease forwards;
         animation-delay: 4.5s;
