@@ -314,13 +314,6 @@ main {
     font-weight: bold;
 }
 
-/* .btn-contact:visited {
-    color: var(--highlight-color);
-    background-color: var(--darkest-bg-color);
-    border: 2px solid var(--highlight-color);
-
-} */
-
 
 .btn-container {
     width: 100%;
@@ -484,9 +477,6 @@ main {
 
 }
 
-/* .project-content {
-    margin: 20px;
-} */
 
 .project-box {
     width: 100%;
@@ -494,7 +484,6 @@ main {
     justify-content: center;
 
 }
-
 
 
 .project-box img {
@@ -544,9 +533,6 @@ main {
 
 
 }
-
-
-
 
 .project-btn {
     border: none;
