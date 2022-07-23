@@ -90,6 +90,14 @@ section {
 
 }
 
+.hide-small {
+    display: none;
+}
+
+.show-small {
+    display: block;
+}
+
 /*----------NAV----------------*/
 .navbar {
     width: 100%;
@@ -234,11 +242,12 @@ main {
     text-align: left;
     position: relative;
     width: fit-content;
-    display: block;
+    /* display: block; */
     color: transparent;
     width: 100%;
 
 }
+
 
 .title .name-heading span {
     animation: text_reveal_box 2s ease forwards;
@@ -759,12 +768,23 @@ footer {
         margin-top: 200px;
     }
 
+    .hide-small {
+        display: block;
+    }
+
+    .show-small {
+        display: none;
+    }
+
     /*---------NAV--------------*/
     .navbar-expand-lg .navbar-nav {
         justify-content: flex-end;
-        animation: slide_in 1.5s ease forwards;
-        width: 0;
+        animation: fade-in-nav 2s ease forwards;
+        width: 100%;
         animation-delay: .5s;
+        color: var(--light-text-color);
+        opacity: 0;
+
     }
 
     .nav-link {
@@ -1339,21 +1359,7 @@ address a {
 
 /*------------KEYFRAMES & ANIMATION-------------*/
 
-/* .fade-out {
-    animation: fade-out 2s ease forwards;
-    animation-delay: 1s;
-}
 
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-
-    }
-
-    100% {
-        opacity: 0
-    }
-} */
 
 @keyframes pulse {
     100% {
@@ -1427,6 +1433,13 @@ address a {
     100% {
 
         color: var(--dark-text-color);
+    }
+}
+
+@keyframes fade-in-nav {
+
+    100% {
+        opacity: 1
     }
 }
 
