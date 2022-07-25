@@ -306,13 +306,13 @@ main {
 
 }
 
-.btn-contact:hover {
+/* .btn-contact:hover {
     background-color: var(--highlight-color);
     color: var(--darkest-bg-color);
     border-radius: 20px;
     transition-duration: 1s;
     font-weight: bold;
-}
+} */
 
 
 .btn-container {
@@ -335,8 +335,8 @@ main {
     border: 2px solid var(--highlight-color);
     font-weight: bold;
     font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     color: var(--highlight-color);
     border-radius: 5px;
     position: relative;
@@ -455,7 +455,7 @@ main {
 .resume-container {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 50px auto;
     width: 100%;
 }
 
@@ -735,6 +735,7 @@ footer {
 
     h2 {
         font-size: 2rem;
+        margin-bottom: 50px;
     }
 
     h3 {
@@ -840,7 +841,7 @@ footer {
     /*-----------Skills-------------*/
 
     .sub-skill-container {
-        width: 80%;
+        width: 60%;
     }
 
     .sub-skill {
@@ -1051,6 +1052,7 @@ footer {
 
     h2 {
         font-size: 2.5rem;
+        margin-bottom: 100px;
     }
 
     h3 {
@@ -1142,6 +1144,7 @@ footer {
     }
 
     .project {
+        width: 30%;
         height: 650px;
         padding: 20px 40px;
     }
@@ -1151,6 +1154,9 @@ footer {
         font-size: 1.2rem;
     }
 
+    .project a {
+        margin-top: 20px;
+    }
 
     .about {
         width: 60%;
@@ -1187,9 +1193,19 @@ footer {
         margin-bottom: 100px;
     }
 
+    .contact-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .contact-info a {
         font-size: 1rem;
     }
+
+    /* footer {
+        margin-left: auto;
+        margin-right: auto;
+    } */
 
 
 }
@@ -1295,6 +1311,7 @@ address a {
     padding: 10px 0 10px 40px;
     margin: 0;
     font-size: 1.5rem;
+    color: var(--darkest-bg-color);
 }
 
 .wrapper-resume {
@@ -1307,8 +1324,8 @@ address a {
     font-size: 1.2rem;
     color: var(--dark-blue-bg-color);
     margin: 10px 0;
-    ;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
 
 }
 
