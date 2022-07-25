@@ -21,7 +21,11 @@ body {
     padding: 0;
     width: 100vw;
     color: var(--light-text-color);
+    /* max-width: 100%;
+    overflow-x: hidden; */
 }
+
+
 
 h1 {
     font-size: 2rem;
@@ -440,6 +444,8 @@ main {
     justify-content: center;
     margin-bottom: 40px;
     flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -615,6 +621,7 @@ footer {
     flex-flow: row wrap;
     padding: 0 20px;
     margin-bottom: 40px;
+    width: 100%;
 
 }
 
@@ -727,8 +734,10 @@ footer {
 /*------------Tablet-------------*/
 @media only screen and (min-width: 768px) {
     .container {
-        padding: 0;
+        padding: 0 20px;
+
     }
+
 
     h1 {
         font-size: 4rem;
@@ -805,6 +814,7 @@ footer {
         margin-top: 15%;
         text-align: left;
         margin-left: 50px;
+
     }
 
     .title h5 {
@@ -1045,7 +1055,7 @@ footer {
 /*------------Desktop------------*/
 @media only screen and (min-width: 1200px) {
     .container {
-        padding: 0;
+        padding: 0 40px;
     }
 
     h1 {
@@ -1118,6 +1128,8 @@ footer {
     .services {
         width: 65%;
     }
+
+
 
     .main-skills {
         width: 60%;
@@ -1206,12 +1218,29 @@ footer {
         font-size: 1rem;
     }
 
-    /* footer {
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+    .outer-container {
+        width: 1370px;
         margin-left: auto;
         margin-right: auto;
-    } */
+    }
+}
 
+@media screen and (min-width: 1600px) {
+    .outer-container {
+        width: 1570px;
+    }
+}
 
+@media screen and (min-width: 1900px) {
+    .outer-container {
+        width: 1870px;
+    }
 }
 
 /*-----------RESUME----------------*/
