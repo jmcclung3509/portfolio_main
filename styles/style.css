@@ -324,7 +324,8 @@ main {
 
 }
 
-.button {
+.button,
+.button2 {
     display: inline-grid;
     place-items: center;
     background-color: transparent;
@@ -345,7 +346,8 @@ main {
     text-decoration: none;
 }
 
-.button::before {
+.button::before,
+.button2::before {
     content: "";
     width: 150%;
     aspect-ratio: 1/1;
@@ -867,7 +869,8 @@ footer {
 
 
 
-    .button {
+    .button,
+    .button2 {
         font-size: 1.2rem;
         padding: 13px 30px;
     }
@@ -1134,7 +1137,8 @@ footer {
 
 
 
-    .button {
+    .button,
+    .button2 {
         font-size: 1.5rem;
     }
 
@@ -1357,6 +1361,11 @@ address a {
 .footer-resume {
     display: flex;
     justify-content: center;
+
+}
+
+.footer-resume p {
+    color: var(--dark-blue-bg-color);
 }
 
 

@@ -1,6 +1,7 @@
 
 const button = document.querySelector(".button")
-const form = document.getElementById("myForm")
+const button2 = document.querySelector(".button2")
+
 
 
 function mousePositionToCustomProp(event, element) {
@@ -21,15 +22,33 @@ button.addEventListener('click', (e) => {
 
     button.addEventListener('animationend', () => {
         button.classList.remove('pulse')
+    })
+    setTimeout(() => {
+        window.location.href = "resume/index.html"
+    }, 1000)
 
 
+
+})
+
+button2.addEventListener('click', (e) => {
+    e.preventDefault()
+    mousePositionToCustomProp(e, button2);
+    button2.classList.add("pulse")
+
+
+    button2.addEventListener('animationend', () => {
+        button2.classList.remove('pulse')
     })
     setTimeout(() => {
 
-        window.location.href = "/resume/index.html"
+        window.location.href = "#contact"
 
     }, 1000)
+
 })
+
+
 
 
 document.addEventListener("click", function (event) {
@@ -39,12 +58,3 @@ document.addEventListener("click", function (event) {
         document.getElementById("navbarNavDropdown").classList.remove("show");
     }
 });
-function openForm() {
-    if (form.classList.contains("close")) {
-        form.classList.remove("close")
-        form.classList.add("open")
-    } else {
-        form.classList.remove("open")
-        form.classList.add("close")
-    }
-}
