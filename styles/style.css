@@ -21,10 +21,13 @@ body {
     padding: 0;
     width: 100vw;
     color: var(--light-text-color);
-    /* max-width: 100%;
-    overflow-x: hidden; */
+
 }
 
+.outer-container {
+    width: 90%;
+    margin: 0 auto;
+}
 
 
 h1 {
@@ -110,7 +113,7 @@ section {
     color: var(--light-text-color);
     margin: 20px auto 0;
     padding-top: 20px;
-    padding-right: 50px;
+
 }
 
 .navbar-nav {
@@ -119,6 +122,7 @@ section {
     width: 100%;
     height: 100%;
     background-color: var(--darkest-bg-color);
+    height: 100vh;
 
 
 }
@@ -417,9 +421,13 @@ main {
     text-align: center;
 }
 
+.skill-container {
+    width: 100%;
+}
+
 .skills-section h3 {
     margin: 40px auto;
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.2rem;
     width: 100%;
 
@@ -434,16 +442,16 @@ main {
     gap: 10px;
     align-items: center;
     width: 100%;
-    margin: 20px;
-    width: fit-content;
+    margin: 20px 0;
+    /* width: fit-content; */
 }
 
 .sub-skill-container {
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 40px;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     margin-left: auto;
     margin-right: auto;
 
@@ -478,7 +486,7 @@ main {
 .project {
     margin-bottom: 40px;
     background-color: var(--box-color);
-    padding: 20px;
+    padding: 30px;
     box-shadow: 5px 5px 20px #000000;
     position: relative;
     height: 550px;
@@ -738,6 +746,10 @@ footer {
 
     }
 
+    .outer-container {
+        width: 80%;
+    }
+
 
     h1 {
         font-size: 4rem;
@@ -807,6 +819,12 @@ footer {
         margin-left: auto;
     }
 
+    .navbar-nav {
+        height: auto;
+        animation: fade-in-nav .5s ease forwards;
+        animation-delay: 0
+    }
+
     /* 
     /*---------TITLE------------*/
     .title {
@@ -851,10 +869,13 @@ footer {
 
 
     /*-----------Skills-------------*/
-
-    .sub-skill-container {
+    .skill-container {
         width: 60%;
     }
+
+    /* .sub-skill-container {
+        width: 80%;
+    } */
 
     .sub-skill {
         margin: 20px;
@@ -939,16 +960,16 @@ footer {
         font-size: 1.5rem;
         width: 80%;
     } */
-    /* .about {
-        width: 80%;
-    } */
+    .about {
+        width: 90%;
+        margin: 0;
+    }
 
     .about-div {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row-reverse;
-        gap: 40px;
+        flex-flow: row wrap;
         width: 100%;
         margin: auto;
 
@@ -1035,11 +1056,17 @@ footer {
 
 /*------------NavBarExpand---------*/
 @media only screen and (min-width: 990px) {
+    .navbar {
+        width: 90%;
+        margin: auto;
+    }
 
-    /*---------TITLE------------*/
     .nav-link {
         width: 100%;
     }
+
+    /*---------TITLE------------*/
+
 
     .title {
         height: 100vh;
@@ -1174,7 +1201,13 @@ footer {
         width: 65%;
     }
 
+    .skill-container {
+        width: 51%;
+    }
 
+    .sub-skill-container {
+        width: 80%;
+    }
 
     .main-skills {
         width: 60%;
@@ -1268,7 +1301,7 @@ footer {
 
 }
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
     .outer-container {
         width: 1370px;
         margin-left: auto;
@@ -1286,7 +1319,7 @@ footer {
     .outer-container {
         width: 1870px;
     }
-}
+} */
 
 /*-----------RESUME----------------*/
 
