@@ -300,27 +300,20 @@ main {
 
 
 .btn-contact {
-    color: var(--highlight-color);
-    background-color: transparent;
-    border: 2px solid var(--highlight-color);
-    padding: 13px 20px;
-    margin-top: 40px;
-    font-size: .875rem;
-    opacity: 0;
-    animation: text_reveal_btn 2s ease forwards;
     animation-delay: 3s;
-    position: relative;
+    animation: text_reveal_btn 2s ease forwards;
+    background-color: transparent;
     border-radius: 6px;
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+    font-size: .875rem;
+    margin-top: 40px;
+    opacity: 0;
+    padding: 13px 20px;
+    position: relative;
 
 }
 
-/* .btn-contact:hover {
-    background-color: var(--highlight-color);
-    color: var(--darkest-bg-color);
-    border-radius: 20px;
-    transition-duration: 1s;
-    font-weight: bold;
-} */
 
 
 .btn-container {
@@ -427,7 +420,7 @@ main {
 
 .skills-section h3 {
     margin: 40px auto;
-    /* text-align: center; */
+    text-align: center;
     font-size: 1.2rem;
     width: 100%;
 
@@ -447,11 +440,11 @@ main {
 }
 
 .sub-skill-container {
-    /* display: flex; */
+    display: flex;
     width: 100%;
-    /* justify-content: center; */
+    justify-content: center;
     margin-bottom: 40px;
-    /* flex-flow: row wrap; */
+    flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
 
@@ -870,12 +863,9 @@ footer {
 
     /*-----------Skills-------------*/
     .skill-container {
-        width: 60%;
+        width: 80%;
     }
 
-    /* .sub-skill-container {
-        width: 80%;
-    } */
 
     .sub-skill {
         margin: 20px;
@@ -1202,11 +1192,11 @@ footer {
     }
 
     .skill-container {
-        width: 51%;
+        width: 60%;
     }
 
     .sub-skill-container {
-        width: 80%;
+        width: 100%;
     }
 
     .main-skills {
