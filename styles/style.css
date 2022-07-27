@@ -914,7 +914,7 @@ footer {
     .project {
         width: 44%;
         height: 550px;
-        padding: 20px;
+        padding: 20px 40px;
     }
 
     .project-content {
@@ -1228,7 +1228,7 @@ footer {
     }
 
     .project {
-        width: 45%;
+        width: 30%;
         height: 650px;
         padding: 20px 40px;
     }
