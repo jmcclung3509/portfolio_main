@@ -1343,7 +1343,7 @@ address {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
 }
 
 address a {
