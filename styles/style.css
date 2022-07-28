@@ -443,7 +443,7 @@ main {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
     flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
@@ -863,7 +863,7 @@ footer {
 
     /*-----------Skills-------------*/
     .skill-container {
-        width: 80%;
+        width: 100%;
     }
 
 
@@ -877,7 +877,7 @@ footer {
 
     .skills-section {
         width: 100%;
-        /* gap: 40px; */
+        gap: 40px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -902,7 +902,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
+        gap: 40px;
         flex-flow: row wrap;
         width: 100%;
     }
