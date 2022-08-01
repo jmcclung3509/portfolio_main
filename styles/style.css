@@ -300,8 +300,6 @@ main {
 
 
 .btn-contact {
-    animation-delay: 3s;
-    animation: text_reveal_btn 2s ease forwards;
     background-color: transparent;
     border-radius: 6px;
     border: 2px solid var(--highlight-color);
@@ -311,6 +309,11 @@ main {
     opacity: 0;
     padding: 13px 20px;
     position: relative;
+    animation: text_reveal_btn 2s ease forwards;
+    animation-delay: 3s;
+    /* animation: text_reveal 2s ease forwards;
+    animation-delay: 3s; */
+
 
 }
 
@@ -322,6 +325,7 @@ main {
     justify-content: flex-start;
     position: relative;
     flex-flow: row wrap;
+
 
 }
 
@@ -434,8 +438,8 @@ main {
     justify-content: flex-start;
     gap: 10px;
     align-items: center;
-    width: 100%;
-    margin: 20px 0;
+    width: fit-content;
+    margin: 20px;
     /* width: fit-content; */
 }
 
