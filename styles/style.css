@@ -900,7 +900,7 @@ footer {
         padding: 13px 30px;
     }
 
-    /*------------PROJECt-SECTION------*/
+    /*------------PROJECT-SECTION------*/
 
     .project-container {
         display: flex;
@@ -956,7 +956,7 @@ footer {
     }
 
     .photo-div img {
-        width: 100%;
+        width: 60%;
     }
 
     .about h3 {
