@@ -196,7 +196,6 @@ main {
 /*---------TITLE SECTION-----------*/
 
 .title-section {
-    /* background-position: center; */
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -311,10 +310,6 @@ main {
     position: relative;
     animation: text_reveal_btn 2s ease forwards;
     animation-delay: 3s;
-    /* animation: text_reveal 2s ease forwards;
-    animation-delay: 3s; */
-
-
 }
 
 
@@ -341,8 +336,6 @@ main {
     border: 2px solid var(--highlight-color);
     font-weight: bold;
     font-size: 1rem;
-    /* margin-left: auto;
-    margin-right: auto; */
     color: var(--highlight-color);
     border-radius: 5px;
     position: relative;
@@ -402,10 +395,7 @@ main {
 
 }
 
-.services h2 {
-    width: 100%;
-    margin-bottom: 40px;
-}
+
 
 /*--------SKILLS SECTION ---------------*/
 section #skills {
@@ -1310,25 +1300,6 @@ footer {
 
 }
 
-/* @media screen and (min-width: 1400px) {
-    .outer-container {
-        width: 1370px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .outer-container {
-        width: 1570px;
-    }
-}
-
-@media screen and (min-width: 1900px) {
-    .outer-container {
-        width: 1870px;
-    }
-} */
 
 /*-----------RESUME----------------*/
 
