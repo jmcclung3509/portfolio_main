@@ -408,8 +408,26 @@ main {
 }
 
 /*--------SKILLS SECTION ---------------*/
+section #skills {
+    justify-content: space-between;
+
+}
+
 .skills-section {
     margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.title-left {
+    text-align: left;
+}
+
+.title-right {
+    text-align: right;
 }
 
 .skills-section h2 {
@@ -424,13 +442,11 @@ main {
 
 .skills-section h3 {
     margin: 40px auto;
-    text-align: center;
     font-size: 1.2rem;
     width: 100%;
+    border-bottom: 1px solid var(--light-text-color);
 
 }
-
-
 
 
 .sub-skill {
@@ -438,9 +454,18 @@ main {
     justify-content: flex-start;
     gap: 10px;
     align-items: center;
-    width: fit-content;
-    margin: 20px;
-    /* width: fit-content; */
+    width: 100%;
+    margin: 20px 0;
+    /* border-bottom: 1px solid var(--highlight-color); */
+
+}
+
+/* .sub-left {
+    border-left: 1px solid var(--highlight-color);
+} */
+.sub-right > .sub-skill {
+    justify-content: flex-end;
+
 }
 
 .sub-skill-container {
@@ -468,7 +493,7 @@ main {
 .resume-container {
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    margin: 0 auto 50px;
     width: 100%;
 }
 
@@ -866,14 +891,18 @@ footer {
 
 
     /*-----------Skills-------------*/
+    #skills {
+        width: 90%;
+        margin: auto;
+    }
+
     .skill-container {
-        width: 100%;
+        width: 48%;
     }
 
 
     .sub-skill {
-        margin: 20px;
-        width: fit-content;
+        width: 100%;
     }
 
 
@@ -884,7 +913,7 @@ footer {
         gap: 40px;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+
     }
 
     .skills-section h3 {
@@ -892,7 +921,9 @@ footer {
         font-size: 1.5rem;
     }
 
-
+    .skills-right {
+        margin-left: auto;
+    }
 
     .button,
     .button2 {
@@ -1172,6 +1203,10 @@ footer {
         width: 65%;
     }
 
+    #skills {
+        width: 80%;
+    }
+
     .skill-container {
         width: 60%;
     }
@@ -1194,6 +1229,9 @@ footer {
         font-size: 2rem;
     }
 
+    .resume-container {
+        margin-bottom: 100px;
+    }
 
 
 
