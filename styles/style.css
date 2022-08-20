@@ -953,7 +953,8 @@ footer {
     /*-----------ABOUT--------------*/
 
     .about {
-        width: 90%;
+        width: 80%;
+        max-width: 768px;
         margin: 0;
     }
 
