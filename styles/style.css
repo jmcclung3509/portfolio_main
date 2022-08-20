@@ -59,7 +59,7 @@ h6 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: .875rem;
+    font-size: 1rem;
     color: var(--dark-text-color);
     margin: 0;
 }
@@ -725,7 +725,7 @@ footer {
 
 .contact-content h2 {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -1238,7 +1238,7 @@ footer {
 
     .project {
         width: 48%;
-        height: 550px;
+        height: 570px;
         padding: 20px 40px;
     }
 
