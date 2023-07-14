@@ -7,6 +7,7 @@
     --dark-text-color: #A8B2D1;
     --blue-highlight-color: #006CFA;
     --box-color: #16283a;
+    --dark-grey-text-color: #444444;
 }
 
 * {
@@ -1424,7 +1425,7 @@ address a {
 
 .degree {
     margin: 0;
-    color: var(--dark-text-color);
+    color: var(--dark-grey-text-color);
 }
 
 .header-subtitle ul {
