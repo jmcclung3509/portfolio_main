@@ -1461,7 +1461,14 @@ address a {
 
 
 /*------------KEYFRAMES & ANIMATION-------------*/
-
+/*Animate Observer */
+.animate {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .animate.visible {
+    opacity: 1;
+  }
 
 
 @keyframes pulse {

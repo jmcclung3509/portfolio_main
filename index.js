@@ -58,3 +58,18 @@ document.addEventListener("click", function (event) {
         document.getElementById("navbarNavDropdown").classList.remove("show");
     }
 });
+const animateElement = document.querySelector('.animate');
+
+    // Create a new Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateElement.classList.add('visible');
+        } else {
+          animateElement.classList.remove('visible');
+        }
+      });
+    });
+
+    // Start observing the animate element
+    observer.observe(animateElement);
