@@ -60,16 +60,16 @@ document.addEventListener("click", function (event) {
 });
 const animateElement = document.querySelector('.animate');
 
-    // Create a new Intersection Observer
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateElement.classList.add('visible');
-        } else {
-          animateElement.classList.remove('visible');
-        }
-      });
-    });
+// Create a new Intersection Observer with threshold set to 0.3
+let observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+      animateElement.classList.add('visible');
+    } else {
+      animateElement.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
 
-    // Start observing the animate element
-    observer.observe(animateElement);
+// Start observing the animate element
+observer.observe(animateElement);
