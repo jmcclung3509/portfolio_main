@@ -1425,7 +1425,8 @@ address a {
 
 .degree {
     margin: 0;
-    color: var(--dark-grey-text-color);
+    color: var(--darkest-bg-color);
+    font-weight: 300;
 }
 
 .header-subtitle ul {
