@@ -58,18 +58,21 @@ document.addEventListener("click", function (event) {
         document.getElementById("navbarNavDropdown").classList.remove("show");
     }
 });
-const animateElement = document.querySelector('.animate');
 
-// Create a new Intersection Observer with threshold set to 0.3
-let observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-      animateElement.classList.add('visible');
-    } else {
-      animateElement.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
+//ANIMATE OBSERVER
+const animateElements = document.querySelectorAll('.animate');
 
-// Start observing the animate element
-observer.observe(animateElement);
+// Create a new Intersection Observer with threshold set to 0.3 for each element
+let observers = [];
+animateElements.forEach((element) => {
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+                element.classList.add('visible');
+            } 
+        });
+    }, { threshold: 0.3 });
+
+    observers.push(observer);
+    observer.observe(element);
+});

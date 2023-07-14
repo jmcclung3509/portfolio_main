@@ -1464,10 +1464,12 @@ address a {
 /*Animate Observer */
 .animate {
     opacity: 0;
-    transition: opacity 1s;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
   }
   .animate.visible {
     opacity: 1;
+    transform: translateY(0);
   }
 
 
