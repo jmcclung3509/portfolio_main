@@ -837,7 +837,7 @@ footer {
         animation-delay: 0
     }
 
-    /* 
+    /*
     /*---------TITLE------------*/
     .title {
         height: 100vh;
@@ -1424,7 +1424,7 @@ address a {
 
 .degree {
     margin: 0;
-    color: var(--blue-highlight-color);
+    color: var(--dark-text-color);
 }
 
 .header-subtitle ul {
